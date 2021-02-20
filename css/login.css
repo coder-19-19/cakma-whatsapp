@@ -1,0 +1,75 @@
+*{
+    font-family: 'Lexend Deca',sans-serif;
+    text-decoration: none !important;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #00112c;
+}
+.box{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+.input{
+    display: block;
+    margin-bottom: 5px;
+    outline: none;
+    padding: 10px 30px;
+    border: 1px gray solid;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.input:focus{
+    border: 2px gray solid;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.registerLink,.loginLink{
+    text-align: center;
+    outline: none;
+    border:1px gray solid;
+    display: block;
+    border-radius: 3px;
+    padding: 8px 25px;
+    width: 100%;
+    background-color: crimson;
+    color: white;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.registerLink{
+    background-color: #0079c1;
+}
+.loginLink:hover{
+    color: white;
+    background-color: #ed1b2e;
+}
+.registerLink:hover{
+    background-color:#00a0af;
+    color: white;
+}
+p,a{
+    text-align:center;
+    color:#2dde98;
+}
+.title{
+    color: #25d366;
+}

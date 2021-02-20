@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Çakma WhatsApp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<div class="page-wrapper chiller-theme toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-success" style="z-index: 1;" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-brand">
+        <a href="#" id="title" style="color: rgb(18, 196, 196);">Çakma WhatsApp<br><span style="color: gray;">Beta 2.0.1</span></a>
+        <div id="close-sidebar">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <input type="file" id="upload-img" style="display: none;" accept=".png, .jpg, .jpeg">
+          <img style="cursor: pointer;border: none;" id="currentUserProfile" class="users-profile"  onclick="$('#upload-img').click()" src="preloader.gif"
+            alt="User picture">
+
+        </div>
+        <div class="user-info">
+          <span class="user-name">
+            <strong id="user-name"></strong>
+          </span>
+          <span class="user-role"></span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Onlayn</span>
+          </span>
+          <span id="logOut"><i class="fa fa-sign-out-alt"></i></span>
+        </div>
+      </div>
+      <!-- sidebar-header  -->
+      <div class="sidebar-search">
+        <div>
+          <div class="input-group">
+            <input type="text" class="form-control search-menu" id="searchUser" placeholder="Axtar...">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fa fa-search" id="searchBtn" aria-hidden="true" style="cursor: pointer;"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar-search  -->
+      <div class="sidebar-menu">
+        <div class="usersTitle">İstifadəçilər</div>
+        <ul class="users-info">
+    
+          <div class="text-center">
+            <img class="preloader" src="preloader.gif"/>
+          </div>
+          
+        </ul>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+  </nav>
+  <!-- sidebar-wrapper  -->
+  <main class="page-content">
+    <div id="messageContainer"  class="container" style="display: none;background: #00112c;max-width: 100%;">
+      <div class="row justify-content-center align-items-center">
+        <div id="messageCol" class="col-sm-12 rounded">
+          <ul class="messageUl mt-5">
+            
+          </ul>
+          <div id="messageGroup" class="form-group text-center mt-5 sticky-bottom">
+            <input type="text" class="messageInput" placeholder="Mesaj..." autocomplete="off">
+            <button id="sendBtn" class="sendBtn"><i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

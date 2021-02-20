@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="box">
+        <div>
+            <h2 class="text-center text-danger">Giriş</h2>
+            <input id="email" name="email" class="input" type="email" autocomplete="email" placeholder="Emailiniz">
+            <input id="password" name="password" class="input" type="password" placeholder="Şifrəniz">
+            <button id="loginBtn" class="loginLink" type="submit">Giriş</button>
+            <a href="changePassword.html" class="text-center d-block mt-3">Şifrəmi unutdum ?</a>
+            <hr style="height:3px;width:100%;background-color: #56a0d3;">
+            <p>Hesabınız yoxdur ?</p>
+            <a class="registerLink"  href="register.html">Qeydiyyat</a>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+</html>
